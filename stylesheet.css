@@ -1,0 +1,487 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ====================
+    VARIÁVEIS DE COR 
+ =====================*/
+:root {
+    --creme:            #FFF7F0;
+    --rosa:             #F7D6E0;
+    --caramelo:         #D9A066;
+    --chocolate:        #4B2E2B;
+    --pistache:         #B7C9A8;
+    --branco:           #FFFFFF;
+
+    --caramelo-dark:    #B5824A;
+    --chocolate-light:  #7A5250;
+    --creme-dark:       #F5E8DA;
+    --pistache-dark:    #8AAA78;
+    --pistache-light:   #DDEBD4;
+    --chocolate-mid:    #8C6360;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: var(--creme);
+    color: var(--chocolate);
+}
+
+/* ====================
+   LAYOUT SEMI FLUIDO
+======================= */
+.corpo {
+    width: 100%;
+    max-width: 1920px;
+    min-width: 850px;
+    margin: 0 auto;
+}
+
+
+/* Cores reutilizáveis */
+.cor_dourado   { color: var(--caramelo); }
+.cor_chocolate { color: var(--chocolate); }
+
+/* ===============
+   CABEÇALHO
+================== */
+.cabecalho {
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 3px solid var(--rosa);
+    overflow: hidden;
+}
+
+.cabecalho h1 {
+    margin-left: 50px;
+    float: left;
+    font-family: 'Pacifico', cursive;
+    font-size: 2.2rem;
+    line-height: 1;
+}
+
+.cabecalho h1 .cor_dourado {
+    font-family: 'Pacifico', cursive;
+}
+
+.cabecalho h1 .cor_chocolate {
+    font-family: 'Pacifico', cursive;
+    color: var(--chocolate);
+}
+
+.cabecalho nav {
+    float: right;
+    margin-top: 10px;
+}
+
+.cabecalho nav ul {
+    list-style: none;
+}
+
+.cabecalho nav ul li {
+    display: inline-block;
+    margin-left: 24px;
+}
+
+.cabecalho nav ul li a {
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.0rem;
+    font-weight: bold;
+    color: var(--chocolate);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border: 3px solid transparent;
+}
+
+.cabecalho nav ul li:not(:last-child) a:hover{
+    color: var(--chocolate);
+    background-color: var(--rosa);
+    transition: ease 0.5s;
+    border: 3px solid var(--rosa);
+    border-radius: 20px;
+}
+
+.cabecalho nav ul li:last-child a {
+    background-color: var(--caramelo);
+    color: var(--branco);
+    padding: 8px 20px;
+    border-radius: 20px;
+}
+
+.cabecalho nav ul li:last-child a:hover {
+    background-color: var(--caramelo-dark);
+    transition: ease 0.5s;
+}
+
+/* ===============
+   PÁGINA INICIAL (HERO)
+================== */
+.background_caramelo {
+    background-color: var(--creme-dark);
+    padding: 70px 60px;
+    overflow: hidden;
+}
+
+/* Coluna esquerda */
+.esquerda {
+    float: left;
+    width: 48%;
+    padding-right: 20px;
+}
+
+/* Coluna direita */
+.direita {
+    float: right;
+    width: 48%;
+}
+
+/* Tags "Artesanal" e "Ingredientes frescos" */
+.container_palavras {
+    margin-bottom: 28px;
+}
+
+.container_palavras span {
+    display: inline-block;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 1.0rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.container_palavras span:first-child {
+    background-color: var(--rosa);
+    color: var(--chocolate);
+}
+
+.container_palavras span:last-child {
+    background-color: var(--pistache-dark);
+    color: var(--chocolate);
+}
+
+/* Títulos hero */
+.esquerda > .cor_chocolate {
+    display: block;
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+.esquerda > .cor_dourado {
+    display: block;
+    font-family: 'Pacifico', cursive;
+    font-size: 2.6rem;
+    margin-bottom: 24px;
+}
+
+/* Parágrafos */
+.texto {
+    font-size: 1.0rem;
+    line-height: 1.8;
+    color: var(--chocolate-light);
+    margin-bottom: 28px;
+    font-weight: bold;
+}
+
+/* Botões clicáveis */
+.clicaveis {
+    margin-bottom: 40px;
+}
+
+.clicaveis a {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.95rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 14px;
+}
+
+.clicaveis a:first-child {
+    background-color: var(--caramelo);
+    color: var(--creme);
+    border: 1px solid transparent;
+}
+
+.clicaveis a:first-child:hover {
+    border: 1px solid var(--caramelo);
+    background-color: transparent;
+    color: var(--chocolate-light);
+    transition: ease 0.5s;
+}
+
+.clicaveis a:last-child {
+    background-color: var(--caramelo);
+    color: var(--creme);
+    border: 1px solid transparent;
+}
+
+.clicaveis a:last-child:hover {
+    background-color: transparent;
+    border: 1px solid var(--caramelo);
+    color: var(--chocolate);
+    transition: ease 0.5s;
+}
+
+/* Estatísticas */
+.estatisticas {
+    overflow: hidden;
+}
+
+.stat {
+    float: left;
+    width: 33%;
+    text-align: left;
+}
+
+.stat .cor_dourado {
+    display: block;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.stat .texto {
+    font-size: 1.0rem;
+    color: var(--chocolate-light);
+    margin-bottom: 0;
+}
+
+/* Imagem hero */
+.direita figure {
+    margin-top: 10px;
+}
+
+.direita figure img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 16px;
+    display: block;
+    margin-left: auto;
+}
+
+/* ===============
+   NOSSA HISTÓRIA
+================== */
+.background_branco {
+    background-color: var(--branco);
+    padding: 80px 60px;
+    overflow: hidden;
+}
+
+.background_branco .esquerda {
+    width: 42%;
+    padding-right: 40px;
+}
+
+.background_branco .esquerda img {
+    width: 100%;
+    border-radius: 16px;
+    display: block;
+}
+
+.background_branco .direita {
+    width: 54%;
+}
+
+/* Tag "Nossa História" */
+.titulos_caramelo {
+    display: inline-block;
+    background-color: var(--creme-dark);
+    color: var(--caramelo-dark);
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.0rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+}
+
+.background_branco .direita h3 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.background_branco .direita h3 .cor_chocolate {
+    display: block;
+    font-family: 'Pacifico', cursive;
+}
+
+.background_branco .direita h3 .cor_dourado {
+    display: block;
+    font-family: 'Pacifico', cursive;
+}
+
+.background_branco .direita .texto {
+    max-width: 100%;
+    margin-bottom: 14px;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 24px;
+    font-size: 1.0rem;
+}
+
+table thead tr {
+    background-color: var(--chocolate);
+    color: var(--branco);
+}
+
+table thead th {
+    padding: 10px 14px;
+    text-align: left;
+    font-weight: 700;
+}
+
+
+table tbody tr {
+    border-bottom: 1px solid var(--creme-dark);
+}
+
+table tbody tr:nth-child(even) {
+    background-color: var(--creme);
+}
+
+table tbody td {
+    padding: 10px 14px;
+    color: var(--chocolate-light);
+}
+
+table tbody td:first-child {
+    color: var(--caramelo-dark);
+    font-weight: bold;
+}
+
+table tbody td:nth-child(2) {
+    color: var(--caramelo);
+    font-weight: bold;
+}
+
+/* ===============
+   SEÇÃO TORTAS
+================== */
+.background_caramelo.tortas {
+    background-color: var(--creme);
+    padding: 80px 60px;
+}
+
+.centro {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+/* Tag "Tortas" */
+.titulos_rosa {
+    display: inline-block;
+    background-color: var(--rosa);
+    color: var(--chocolate);
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.0rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+}
+
+.centro h3 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    color: var(--chocolate);
+    margin-bottom: 8px;
+}
+
+.centro p {
+    font-size: 1.0rem;
+    color: var(--chocolate-light);
+    font-weight: bold;
+}
+
+/* Cards */
+.container_catalogo {
+    font-size: 0;
+    text-align: center;
+}
+
+.card_torta {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin: 0 1.5% 32px 1.5%;
+    border-radius: 16px;
+    text-align: left;
+    font-size: 1rem;
+    overflow: hidden;
+}
+
+.card_torta:nth-child(1) { background-color: var(--rosa); }
+.card_torta:nth-child(2) { background-color: var(--chocolate); color: var(--branco); }
+.card_torta:nth-child(3) { background-color: var(--pistache); }
+.card_torta:nth-child(4) { background-color: var(--caramelo); }
+.card_torta:nth-child(5) { background-color: var(--rosa); }
+.card_torta:nth-child(6) { background-color: var(--caramelo-dark); color: var(--branco); }
+
+.card_torta figure {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card_torta figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card_torta h3 {
+    font-family: 'Nunito';
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 16px 16px 8px;
+}
+
+.card_torta p {
+    font-size: 1.0rem;
+    line-height: 1.5;
+    padding: 0 16px;
+    opacity: 0.85;
+    font-weight: bold;
+    min-height: 80px;
+}
+
+.card_torta .preco {
+    display: block;
+    margin: 14px 16px 16px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(0,0,0,0.15);
+    font-size: 1.0rem;
+    font-weight: 700;
+    color: var(--creme-dark);
+}
+
+.card_torta:nth-child(2) .preco,
+.card_torta:nth-child(6) .preco {
+    border-top-color: rgba(255,255,255,0.25);
+}
+
+.card_torta:nth-child(1) .preco, 
+.card_torta:nth-child(3) .preco,
+.card_torta:nth-child(5) .preco {
+    color: var(--chocolate);
+}

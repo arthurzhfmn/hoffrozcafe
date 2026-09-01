@@ -1,0 +1,274 @@
+/* =====================================================
+                    CONFIGURAÇÕES GERAIS
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    background-color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.container {
+    width: min(1090px, 90%);
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* =====================================================
+                    SEÇÃO DAS BEBIDAS
+===================================================== */
+
+.bebidas {
+    background-color: #55312d;
+    min-height: 272px;
+    padding: 56px 0 55px;
+    color: #ffffff;
+}
+
+.tag-bebidas {
+    display: inline-block;
+    padding: 8px 17px;
+    border-radius: 14px;
+    background-color: #89615e;
+    color: #f7dddd;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.titulo-bebidas {
+    margin-top: 8px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.1;
+    font-family: Pacifico ;
+}
+
+.subtitulo-bebidas {
+    margin-top: 5px;
+    color: #b8918d;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.menu-bebidas {
+    width: 100%;
+    margin-top: 14px;
+    text-align: center;
+}
+.menu-bebidas button {
+    display: inline-block;
+    border: 1.5px solid #f4d8d2;
+    border-radius: 14px;
+    background-color: #805c59;
+    color: #ffffff;
+    padding: 10px 15px;
+    margin: 0 5px 10px; /* Substitui o gap */
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.25s;
+    vertical-align: middle;
+}
+
+.menu-bebidas button:hover {
+    background-color: #f2d5cf;
+    color: #55312d;
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+                    SEÇÃO DOS SALGADOS
+===================================================== */
+
+.salgados {
+    background-color: #ffffff;
+    padding: 90px 0 80px;
+    color: #573531;
+}
+
+.salgados .tag {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 15px;
+    background-color: #f8e8d7;
+    color: #dfa45d;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.salgados h2 {
+    margin-top: 7px;
+    color: #573531;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: Pacifico;
+    line-height: 1.1;
+}
+
+.salgados .subtitulo {
+    margin-top: 3px;
+    color: #a87974;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cards-salgados {
+    margin-top: 34px;
+    text-align: left;
+    font-size: 0; /* Remove espaço entre inline-blocks */
+}
+
+.card {
+    display: inline-block;
+    width: calc(50% - 12px); /* Substitui as colunas do grid */
+    margin-bottom: 24px;
+    margin-right: 24px;
+    min-height: 117px;
+    padding: 25px 32px;
+    border: 2px solid #d9a264;
+    border-radius: 16px;
+    background-color: #fbefdf;
+    vertical-align: top;
+    font-size: 16px; /* Restaura o font-size */
+}
+
+.cards-salgados .card:nth-child(2n) {
+    margin-right: 0; /* Remove margem da última coluna */
+}
+
+.info {
+    display: inline-block;
+    width: 75%;
+    vertical-align: middle;
+}
+
+.info h3 {
+    color: #5b403b;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.info p {
+    margin-top: 7px;
+    color: #9b6e69;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.preco {
+    display: inline-block;
+    width: 20%;
+    text-align: right;
+    vertical-align: middle;
+    color: #c78943;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.titulo {
+    margin-bottom: 5px;
+}
+
+.vegano {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 18px;
+    border-radius: 15px;
+    background-color: #dcefd7;
+    color: #7ca66e;
+    font-size: 14px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+
+/* =====================================================
+                    SEÇÃO DE DEPOIMENTOS
+===================================================== */
+
+.depoimentos {
+    min-height: 625px;
+    padding: 92px 0 78px;
+    background: linear-gradient(
+        to bottom,
+        #56312d 0%,
+        #6e4648 31%,
+        #9d6b74 62%,
+        #e3abb9 100%
+    );
+    color: #ffffff;
+}
+
+.tag-depoimentos {
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 15px;
+    background-color: #5b322f;
+    color: #f2d5d7;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.titulo-depoimentos {
+    margin-top: 33px;
+    color: #ffffff;
+    font-size: 54px;
+    font-weight: bold;
+    font-family: Pacifico;
+    line-height: 1;
+}
+
+.subtitulo-depoimentos {
+    margin: 17px auto 0;
+    max-width: 680px;
+    color: #e3c1c6;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cards-depoimentos {
+    max-width: 795px;
+    margin: 78px auto 0;
+    text-align: center; /* Centraliza os cards inline */
+    font-size: 0;
+}
+
+.card-depoimento {
+    display: inline-block;
+    width: calc(33.33% - 27px);
+    margin: 0 13px 40px;
+    position: relative;
+    text-align: left;
+    min-height: 220px;
+    padding: 22px 16px 20px;
+    border: 2px solid rgba(255, 235, 238, 0.42);
+    border-radius: 16px;
+    background-color: rgba(173, 119, 130, 0.18);
+    vertical-align: top;
+    font-size: 14px;
+}
+
+.aspas {
+    position: absolute;
+    top: -22px;
+    left: -14px;
+    color: #f8d9dc;
+    font-size: 44px;
+    font-family: Pacifico;
+    line-height: 1;
+}
