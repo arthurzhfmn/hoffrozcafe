@@ -1,6 +1,6 @@
 # Hoffroz Café ☕
 
-Projeto final desenvolvido para a disciplina de **Desenvolvimento de Interfaces para Web**.
+Projeto final desenvolvido para a disciplina de **Desenvolvimento de Interfaces para Web**, do 1° semestre do curso de Análise e Desenvolvimento de Sistemas.
 
 ---
 
