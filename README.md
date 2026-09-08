@@ -16,6 +16,7 @@ O objetivo deste trabalho foi criar uma interface web completa e funcional para 
 ### ⚠️ Desafios e Restrições Técnicas
 Como parte do escopo pedagógico da disciplina, havia limitações técnicas importantes:
 * **Sem Flexbox ou CSS Grid:** O layout precisou ser construído sem o uso de `display: flex`, `flexbox` ou `grid`, exigindo soluções clássicas de posicionamento e fluxo de elementos em CSS (como `inline-block`, `float` e manipulação de espaçamentos e caixas).
+* **Layout Semifluido:** A estrutura da página foi construída adotando o conceito de **layout semifluido**, combinando larguras relativas (como porcentagens) com limites bem definidos (`min-width` e `max-width`), garantindo adaptabilidade entre diferentes resoluções sem perder a proporção e a integridade visual dos elementos.
 * **Foco em fundamentos:** O desenvolvimento foi focado na base pura de **HTML5** e **CSS3**, garantindo clareza estrutural e domínio dos conceitos fundamentais de layout.
 
 ---
